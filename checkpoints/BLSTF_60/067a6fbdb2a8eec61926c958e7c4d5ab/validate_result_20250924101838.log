@@ -1,0 +1,13 @@
+2025-09-24 10:18:38,258 - easytorch-inference - INFO - Loading Checkpoint from 'checkpoints9.20/BLSTF_60/b2eeb5e3f1fc060182831b9ae39cb2bc/BLSTF_best_val_MAE.pt'
+2025-09-24 10:18:51,631 - easytorch-inference - INFO - Evaluate best model on test data for horizon 1, Test MAE: 16.3351, Test RMSE: 26.6404, Test MAPE: 0.1104
+2025-09-24 10:18:51,636 - easytorch-inference - INFO - Evaluate best model on test data for horizon 2, Test MAE: 16.7977, Test RMSE: 27.5599, Test MAPE: 0.1139
+2025-09-24 10:18:51,641 - easytorch-inference - INFO - Evaluate best model on test data for horizon 3, Test MAE: 17.1871, Test RMSE: 28.2575, Test MAPE: 0.1165
+2025-09-24 10:18:51,648 - easytorch-inference - INFO - Evaluate best model on test data for horizon 4, Test MAE: 17.5014, Test RMSE: 28.7990, Test MAPE: 0.1182
+2025-09-24 10:18:51,653 - easytorch-inference - INFO - Evaluate best model on test data for horizon 5, Test MAE: 17.7545, Test RMSE: 29.2415, Test MAPE: 0.1195
+2025-09-24 10:18:51,657 - easytorch-inference - INFO - Evaluate best model on test data for horizon 6, Test MAE: 17.9775, Test RMSE: 29.6151, Test MAPE: 0.1207
+2025-09-24 10:18:51,662 - easytorch-inference - INFO - Evaluate best model on test data for horizon 7, Test MAE: 18.1927, Test RMSE: 29.9652, Test MAPE: 0.1219
+2025-09-24 10:18:51,667 - easytorch-inference - INFO - Evaluate best model on test data for horizon 8, Test MAE: 18.3845, Test RMSE: 30.2697, Test MAPE: 0.1230
+2025-09-24 10:18:51,671 - easytorch-inference - INFO - Evaluate best model on test data for horizon 9, Test MAE: 18.5844, Test RMSE: 30.5684, Test MAPE: 0.1242
+2025-09-24 10:18:51,676 - easytorch-inference - INFO - Evaluate best model on test data for horizon 10, Test MAE: 18.7711, Test RMSE: 30.8356, Test MAPE: 0.1255
+2025-09-24 10:18:51,680 - easytorch-inference - INFO - Evaluate best model on test data for horizon 11, Test MAE: 18.9681, Test RMSE: 31.0973, Test MAPE: 0.1270
+2025-09-24 10:18:51,685 - easytorch-inference - INFO - Evaluate best model on test data for horizon 12, Test MAE: 19.1763, Test RMSE: 31.3762, Test MAPE: 0.1286

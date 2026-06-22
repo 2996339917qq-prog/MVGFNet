@@ -1,0 +1,93 @@
+DESCRIPTION: BLSTF model configuration
+RUNNER: <class 'basicts.runners.runner_zoo.simple_tsf_runner.SimpleTimeSeriesForecastingRunner'>
+DATASET_CLS: <class 'basicts.data.dataset.TimeSeriesForecastingDataset'>
+DATASET_NAME: PEMS08
+DATASET_TYPE: Traffic flow
+DATASET_INPUT_LEN: 12
+DATASET_OUTPUT_LEN: 12
+GPU_NUM: 1
+ENV:
+  SEED: 1
+  CUDNN:
+    ENABLED: True
+MODEL:
+  NAME: BLSTF08
+  ARCH: <class 'basicts.BLSTF.BLSTF.BLSTF'>
+  PARAM:
+    num_nodes: 170
+    adj_mx: [tensor([[1.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 1.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.8945,  ..., 0.0000, 0.0000, 0.0000],
+        ...,
+        [0.0000, 0.0000, 0.0000,  ..., 0.3961, 0.2790, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.4864, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.3859]]), tensor([[0.5145, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 1.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 1.0000,  ..., 0.0000, 0.0000, 0.0000],
+        ...,
+        [0.0000, 0.0000, 0.0000,  ..., 0.5464, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.3134, 1.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.3958]])]
+    in_steps: 12
+    out_steps: 12
+    steps_per_day: 288
+    input_dim: 3
+    output_dim: 1
+    input_embedding_dim: 32
+    tod_embedding_dim: 32
+    ts_embedding_dim: 32
+    dow_embedding_dim: 32
+    time_embedding_dim: 0
+    adaptive_embedding_dim: 64
+    node_dim: 64
+    feed_forward_dim: 256
+    out_feed_forward_dim: 256
+    num_heads: 4
+    mlp_num_layers: 2
+    num_layers: 1
+    num_layers_m: 1
+    dropout: 0.1
+    use_mixed_proj: True
+  FORWARD_FEATURES: [0, 1, 2]
+  TARGET_FEATURES: [0]
+TRAIN:
+  LOSS: masked_mae
+  OPTIM:
+    TYPE: Adam
+    PARAM:
+      lr: 0.001
+      weight_decay: 0.00015
+  LR_SCHEDULER:
+    TYPE: MultiStepLR
+    PARAM:
+      milestones: [25, 45, 65]
+      gamma: 0.1
+  NUM_EPOCHS: 60
+  CKPT_SAVE_DIR: checkpoints\BLSTF08_60
+  DATA:
+    DIR: datasets/PEMS08
+    BATCH_SIZE: 32
+    PREFETCH: False
+    SHUFFLE: True
+    NUM_WORKERS: 2
+    PIN_MEMORY: False
+  NULL_VAL: 0.0
+VAL:
+  INTERVAL: 1
+  DATA:
+    DIR: datasets/PEMS08
+    BATCH_SIZE: 32
+    PREFETCH: False
+    SHUFFLE: False
+    NUM_WORKERS: 2
+    PIN_MEMORY: False
+TEST:
+  INTERVAL: 1
+  DATA:
+    DIR: datasets/PEMS08
+    BATCH_SIZE: 32
+    PREFETCH: False
+    SHUFFLE: False
+    NUM_WORKERS: 2
+    PIN_MEMORY: False
+MD5: ef721de27e740d5bb899b46155f7c625

@@ -1,0 +1,34 @@
+2025-10-02 00:21:40,708 - easytorch-training - INFO - Initializing training.
+2025-10-02 00:21:40,708 - easytorch-training - INFO - Building training data loader.
+2025-10-02 00:21:40,745 - easytorch-training - INFO - Set optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.00015
+)
+2025-10-02 00:21:40,745 - easytorch-training - INFO - Set lr_scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x000001A2F9567460>
+2025-10-02 00:21:40,748 - easytorch-training - INFO - Initializing validation.
+2025-10-02 00:21:40,748 - easytorch-training - INFO - Building val data loader.
+2025-10-02 00:21:40,819 - easytorch-training - INFO - Epoch 1 / 60
+2025-10-02 00:21:46,352 - easytorch-training - ERROR - Traceback (most recent call last):
+  File "E:\anaconda\envs\PD\lib\site-packages\easytorch\launcher\launcher.py", line 31, in training_func
+    runner.train(cfg)
+  File "E:\anaconda\envs\PD\lib\site-packages\easytorch\core\runner.py", line 339, in train
+    loss = self.train_iters(epoch, iter_index, data)
+  File "D:\Zhuomian\model5\BLSTF-main\basicts\runners\base_tsf_runner.py", line 325, in train_iters
+    prediction, real_value= self.forward(
+  File "D:\Zhuomian\model5\BLSTF-main\basicts\runners\runner_zoo\simple_tsf_runner.py", line 76, in forward
+    prediction_data= self.model(history_data=history_data, future_data=future_data_4_dec, batch_seen=iter_num, epoch=epoch, train=train)
+  File "E:\anaconda\envs\PD\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Zhuomian\model5\BLSTF-main\basicts\BLSTF\BLSTF.py", line 193, in forward
+    x1 = torch.cat([temporal_x,node_forward2],dim=1)
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 170 but got size 32 for tensor number 1 in the list.
+

@@ -1,0 +1,28 @@
+2025-10-02 00:01:57,680 - easytorch-training - INFO - Initializing training.
+2025-10-02 00:01:57,681 - easytorch-training - INFO - Building training data loader.
+2025-10-02 00:01:57,717 - easytorch-training - INFO - Set optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.00015
+)
+2025-10-02 00:01:57,717 - easytorch-training - INFO - Set lr_scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x00000227CC348370>
+2025-10-02 00:01:57,720 - easytorch-training - INFO - Initializing validation.
+2025-10-02 00:01:57,720 - easytorch-training - INFO - Building val data loader.
+2025-10-02 00:01:57,790 - easytorch-training - INFO - Epoch 1 / 60
+2025-10-02 00:02:01,827 - easytorch-training - ERROR - Traceback (most recent call last):
+  File "E:\anaconda\envs\PD\lib\site-packages\easytorch\launcher\launcher.py", line 31, in training_func
+    runner.train(cfg)
+  File "E:\anaconda\envs\PD\lib\site-packages\easytorch\core\runner.py", line 339, in train
+    loss = self.train_iters(epoch, iter_index, data)
+  File "D:\Zhuomian\model5\BLSTF-main\basicts\runners\base_tsf_runner.py", line 325, in train_iters
+    prediction, real_value= self.forward(
+TypeError: forward() missing 1 required positional argument: 'n'
+

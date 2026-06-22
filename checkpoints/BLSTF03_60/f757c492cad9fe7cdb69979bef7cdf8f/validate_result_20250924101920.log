@@ -1,0 +1,13 @@
+2025-09-24 10:19:20,914 - easytorch-inference - INFO - Loading Checkpoint from 'checkpoints9.20/BLSTF03_60/ef011cb2b0ba3a4a2673fcfd54025195/BLSTF03_best_val_MAE.pt'
+2025-09-24 10:19:39,550 - easytorch-inference - INFO - Evaluate best model on test data for horizon 1, Test MAE: 12.0551, Test RMSE: 19.0745, Test MAPE: 0.1265
+2025-09-24 10:19:39,557 - easytorch-inference - INFO - Evaluate best model on test data for horizon 2, Test MAE: 12.7540, Test RMSE: 20.7218, Test MAPE: 0.1342
+2025-09-24 10:19:39,564 - easytorch-inference - INFO - Evaluate best model on test data for horizon 3, Test MAE: 13.3528, Test RMSE: 22.0111, Test MAPE: 0.1409
+2025-09-24 10:19:39,571 - easytorch-inference - INFO - Evaluate best model on test data for horizon 4, Test MAE: 13.8467, Test RMSE: 23.0319, Test MAPE: 0.1447
+2025-09-24 10:19:39,578 - easytorch-inference - INFO - Evaluate best model on test data for horizon 5, Test MAE: 14.2800, Test RMSE: 23.8671, Test MAPE: 0.1487
+2025-09-24 10:19:39,585 - easytorch-inference - INFO - Evaluate best model on test data for horizon 6, Test MAE: 14.6619, Test RMSE: 24.5535, Test MAPE: 0.1527
+2025-09-24 10:19:39,593 - easytorch-inference - INFO - Evaluate best model on test data for horizon 7, Test MAE: 15.0337, Test RMSE: 25.2262, Test MAPE: 0.1554
+2025-09-24 10:19:39,600 - easytorch-inference - INFO - Evaluate best model on test data for horizon 8, Test MAE: 15.3799, Test RMSE: 25.8556, Test MAPE: 0.1587
+2025-09-24 10:19:39,607 - easytorch-inference - INFO - Evaluate best model on test data for horizon 9, Test MAE: 15.7072, Test RMSE: 26.4393, Test MAPE: 0.1619
+2025-09-24 10:19:39,614 - easytorch-inference - INFO - Evaluate best model on test data for horizon 10, Test MAE: 16.0277, Test RMSE: 26.9977, Test MAPE: 0.1646
+2025-09-24 10:19:39,622 - easytorch-inference - INFO - Evaluate best model on test data for horizon 11, Test MAE: 16.3381, Test RMSE: 27.5601, Test MAPE: 0.1679
+2025-09-24 10:19:39,629 - easytorch-inference - INFO - Evaluate best model on test data for horizon 12, Test MAE: 16.6561, Test RMSE: 28.0999, Test MAPE: 0.1698

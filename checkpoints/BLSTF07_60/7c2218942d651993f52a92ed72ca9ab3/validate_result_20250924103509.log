@@ -1,0 +1,14 @@
+2025-09-24 10:35:09,707 - easytorch-inference - INFO - Loading Checkpoint from 'checkpoints9.20/BLSTF07_60/309f3f71fbe771e42a55ca4e41385fc3/BLSTF07_best_val_MAE.pt'
+2025-09-24 10:36:20,233 - easytorch-inference - INFO - Evaluate best model on test data for horizon 1, Test MAE: 16.5143, Test RMSE: 26.8718, Test MAPE: 0.0687
+2025-09-24 10:36:20,255 - easytorch-inference - INFO - Evaluate best model on test data for horizon 2, Test MAE: 17.3248, Test RMSE: 28.7794, Test MAPE: 0.0722
+2025-09-24 10:36:20,275 - easytorch-inference - INFO - Evaluate best model on test data for horizon 3, Test MAE: 17.9519, Test RMSE: 30.0242, Test MAPE: 0.0746
+2025-09-24 10:36:20,297 - easytorch-inference - INFO - Evaluate best model on test data for horizon 4, Test MAE: 18.4586, Test RMSE: 30.9901, Test MAPE: 0.0767
+2025-09-24 10:36:20,319 - easytorch-inference - INFO - Evaluate best model on test data for horizon 5, Test MAE: 18.8817, Test RMSE: 31.7915, Test MAPE: 0.0785
+2025-09-24 10:36:20,340 - easytorch-inference - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.2682, Test RMSE: 32.4944, Test MAPE: 0.0801
+2025-09-24 10:36:20,363 - easytorch-inference - INFO - Evaluate best model on test data for horizon 7, Test MAE: 19.6371, Test RMSE: 33.1266, Test MAPE: 0.0816
+2025-09-24 10:36:20,387 - easytorch-inference - INFO - Evaluate best model on test data for horizon 8, Test MAE: 19.9424, Test RMSE: 33.6844, Test MAPE: 0.0829
+2025-09-24 10:36:20,415 - easytorch-inference - INFO - Evaluate best model on test data for horizon 9, Test MAE: 20.2921, Test RMSE: 34.2333, Test MAPE: 0.0845
+2025-09-24 10:36:20,441 - easytorch-inference - INFO - Evaluate best model on test data for horizon 10, Test MAE: 20.4987, Test RMSE: 34.6605, Test MAPE: 0.0855
+2025-09-24 10:36:20,466 - easytorch-inference - INFO - Evaluate best model on test data for horizon 11, Test MAE: 20.7914, Test RMSE: 35.1401, Test MAPE: 0.0870
+2025-09-24 10:36:20,493 - easytorch-inference - INFO - Evaluate best model on test data for horizon 12, Test MAE: 21.0939, Test RMSE: 35.5995, Test MAPE: 0.0885
+2025-09-24 10:36:24,660 - easytorch-inference - INFO - Result <test>: [test_time: 74.23 (s), test_MAE: 19.2213, test_RMSE: 32.3859, test_MAPE: 0.0801]

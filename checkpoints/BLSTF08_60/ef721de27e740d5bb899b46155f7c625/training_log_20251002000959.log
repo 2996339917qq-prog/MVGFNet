@@ -1,0 +1,43 @@
+2025-10-02 00:09:59,865 - easytorch-training - INFO - Initializing training.
+2025-10-02 00:09:59,865 - easytorch-training - INFO - Building training data loader.
+2025-10-02 00:09:59,904 - easytorch-training - INFO - Set optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.00015
+)
+2025-10-02 00:09:59,905 - easytorch-training - INFO - Set lr_scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x0000022FD3446B20>
+2025-10-02 00:09:59,909 - easytorch-training - INFO - Initializing validation.
+2025-10-02 00:09:59,909 - easytorch-training - INFO - Building val data loader.
+2025-10-02 00:09:59,979 - easytorch-training - INFO - Epoch 1 / 60
+2025-10-02 00:13:21,363 - easytorch-training - ERROR - Traceback (most recent call last):
+  File "E:\anaconda\envs\PD\lib\site-packages\easytorch\launcher\launcher.py", line 31, in training_func
+    runner.train(cfg)
+  File "E:\anaconda\envs\PD\lib\site-packages\easytorch\core\runner.py", line 339, in train
+    loss = self.train_iters(epoch, iter_index, data)
+  File "D:\Zhuomian\model5\BLSTF-main\basicts\runners\base_tsf_runner.py", line 325, in train_iters
+    prediction, real_value= self.forward(
+  File "D:\Zhuomian\model5\BLSTF-main\basicts\runners\runner_zoo\simple_tsf_runner.py", line 76, in forward
+    prediction_data= self.model(history_data=history_data, future_data=future_data_4_dec, batch_seen=iter_num, epoch=epoch, train=train)
+  File "E:\anaconda\envs\PD\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Zhuomian\model5\BLSTF-main\basicts\BLSTF\BLSTF.py", line 178, in forward
+  File "D:\Zhuomian\model5\BLSTF-main\basicts\BLSTF\BLSTF.py", line 178, in forward
+  File "_pydevd_bundle\pydevd_cython_win32_39_64.pyx", line 1179, in _pydevd_bundle.pydevd_cython_win32_39_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_39_64.pyx", line 620, in _pydevd_bundle.pydevd_cython_win32_39_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_39_64.pyx", line 929, in _pydevd_bundle.pydevd_cython_win32_39_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_39_64.pyx", line 920, in _pydevd_bundle.pydevd_cython_win32_39_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_39_64.pyx", line 317, in _pydevd_bundle.pydevd_cython_win32_39_64.PyDBFrame.do_wait_suspend
+  File "E:\pycharm\PyCharm 2023.1.4\plugins\python\helpers\pydev\pydevd.py", line 1160, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "E:\pycharm\PyCharm 2023.1.4\plugins\python\helpers\pydev\pydevd.py", line 1175, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+
